@@ -1,11 +1,33 @@
 #priority -50
 
+snippet . "rule"
+${1} {
+	${2}
+}${0}
+endsnippet
+
+snippet .. "rule"
+.${1} {
+	${2}
+}${0}
+endsnippet
+
+snippet .# "rule"
+#${1} {
+	${2}
+}${0}
+endsnippet
+
 #
 # Display
 #
 
 snippet d "display"
 display: ${1:block};$0
+endsnippet
+
+snippet dn "display: none;"
+display: none;$0
 endsnippet
 
 snippet db "display: block;"
@@ -100,6 +122,10 @@ snippet bw "border-width"
 border-width: ${1:0};$0
 endsnippet
 
+snippet brd "border-radius"
+border-radius: ${1:0};$0
+endsnippet
+
 snippet bt "border-top"
 border-top: ${1:0};$0
 endsnippet
@@ -147,7 +173,6 @@ endsnippet
 snippet blw "border-left"
 border-left-width: ${1:0};$0
 endsnippet
-
 
 #
 # Background
@@ -250,6 +275,10 @@ snippet po "position"
 position: ${1:relative};$0
 endsnippet
 
+snippet poa "position: absolute"
+position: absolute;$0
+endsnippet
+
 snippet pos "position: static"
 position: static;$0
 endsnippet
@@ -267,8 +296,24 @@ position: sticky;$0
 endsnippet
 
 #
-# Various
+# Text
 #
+
+snippet ta "text-align"
+text-align: ${1:center};$0
+endsnippet
+
+snippet tac "text-align: center"
+text-align: center;$0
+endsnippet
+
+snippet tal "text-align: left"
+text-align: left;$0
+endsnippet
+
+snippet tar "text-align: right"
+text-align: right;$0
+endsnippet
 
 snippet tt "text-transform"
 text-transform: ${1:none};$0
@@ -281,6 +326,31 @@ endsnippet
 snippet ttc "text-transform: capitalize"
 text-transform: capitalize;$0
 endsnippet
+
+snippet td "text-decoration"
+text-transform: ${1};$0
+endsnippet
+
+snippet tdn "text-decoration: none"
+text-decoration: none;$0
+endsnippet
+
+#
+# List
+#
+
+snippet ls "list-style:"
+list-style: ${1};$0
+endsnippet
+
+snippet lsn "list-style:"
+list-style: none outside;$0
+endsnippet
+
+
+#
+# Various
+#
 
 snippet ! "!important CSS (!)"
 !important
@@ -402,4 +472,15 @@ snippet ptr_reset
 	margin: 0;
 }
 endsnippet
+
+snippet ptr_typo
+html {
+	font: normal 14px/1.5 "Fira Sans", sans-serif;
+}
+
+body {
+	font: inherit;
+}
+endsnippet
+
 # vim:ft=snippets:
