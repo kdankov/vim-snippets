@@ -18,6 +18,12 @@ snippet inc
 @include ${1:mixin}(${2});
 endsnippet
 
+snippet bp
+@include bp(${1}) {
+	${2}
+}$0
+endsnippet
+
 snippet ext
 @extend ${0};
 endsnippet
