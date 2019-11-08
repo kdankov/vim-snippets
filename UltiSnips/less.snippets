@@ -1,0 +1,639 @@
+# priority -50
+
+snippet . "rule"
+${1} {
+	${2}
+}${0}
+endsnippet
+
+snippet .. "rule"
+.${1} {
+	${2}
+}${0}
+endsnippet
+
+snippet .# "rule"
+#${1} {
+	${2}
+}${0}
+endsnippet
+
+#
+# Display
+#
+
+snippet d "display"
+display: ${1:block};$0
+endsnippet
+
+snippet dn "display: none;"
+display: none;$0
+endsnippet
+
+snippet db "display: block;"
+display: block;$0
+endsnippet
+
+snippet di "display: inline;"
+display: inline;$0
+endsnippet
+
+snippet dib "display: inline-block;"
+display: inline-block;$0
+endsnippet
+
+snippet w "width"
+width: ${1:auto};$0
+endsnippet
+
+snippet h "height"
+height: ${1:auto};$0
+endsnippet
+
+#
+# Flexbox
+#
+
+snippet df "display: flex;"
+display: flex;$0
+endsnippet
+
+snippet fx "flex: 0 0 auto;"
+flex: ${1:1} ${2:0} ${3:auto};$0
+endsnippet
+
+snippet fx10a "flex: 1 0 auto;"
+flex: 1 0 auto;$0
+endsnippet
+
+snippet fdc "flex-direction: column;"
+flex-direction: column;$0
+endsnippet
+
+snippet fww "flex-wrap: wrap;"
+flex-wrap: wrap;$0
+endsnippet
+
+snippet jc "justify-content: $"
+justify-content: ${1:center};$0
+endsnippet
+
+snippet jcsb "justify-content: space-between;"
+justify-content: space-between;$0
+endsnippet
+
+snippet jcc "justify-content: center;"
+justify-content: center;$0
+endsnippet
+
+snippet aifs "align-items: flext-start;"
+align-items: flex-start;$0
+endsnippet
+
+snippet aic "align-items: center;"
+align-items: center;$0
+endsnippet
+
+#
+# Grid
+#
+
+snippet dg "display: grid;"
+display: grid;$0
+endsnippet
+
+snippet gtc "grid-template-columns: 1fr;"
+grid-template-columns: ${1:1fr};$0
+endsnippet
+
+snippet gtr "grid-template-rows: 1fr;"
+grid-template-columns: ${1:1fr};$0
+endsnippet
+
+snippet gg "grid-gap: 1em;"
+grid-gap: ${1:1em};$0
+endsnippet
+
+snippet grg "grid-row-gap: 1em;"
+grid-row-gap: ${1:1em};$0
+endsnippet
+
+snippet gcg "grid-column-gap: 1em;"
+grid-column-gap: ${1:1em};$0
+endsnippet
+
+snippet gaf "grid-auto-flow"
+grid-auto-flow: ${1:row};$0
+endsnippet
+
+snippet gc "grid-column: 1 / -1;"
+grid-column: ${1:1} / ${2:-1};$0
+endsnippet
+
+snippet gcs "grid-column-start: 1"
+grid-column-start: ${1:1};$0
+endsnippet
+
+snippet gce "grid-column-end: -1"
+grid-column-end: ${1:-1};$0
+endsnippet
+
+snippet gr "grid-row: 1 / -1;"
+grid-row: ${1:1} / ${2:-1};$0
+endsnippet
+
+snippet grs "grid-row-start: 1;"
+grid-row-start: ${1:1};$0
+endsnippet
+
+snippet gre "grid-row-end: 1;"
+grid-row-end: ${1:-1};$0
+endsnippet
+
+snippet rep "repeat(${1:3fr}, ${2:auto})"
+repeat(${1:3fr}, ${2:auto});$0
+endsnippet
+
+#
+# Padding
+#
+
+snippet p "padding"
+padding: ${1:0};$0
+endsnippet
+
+snippet p0 "padding: 0;"
+padding: 0;$0
+endsnippet
+
+snippet pt "padding-top"
+padding-top: ${1:0};$0
+endsnippet
+
+snippet pr "padding-right"
+padding-right: ${1:0};$0
+endsnippet
+
+snippet pl "padding-left"
+padding-left: ${1:0};$0
+endsnippet
+
+snippet pb "padding-bottom"
+padding-bottom: ${1:0};$0
+endsnippet
+
+#
+# Margin
+#
+
+snippet m "margin"
+margin: ${1:0};$0
+endsnippet
+
+snippet m0 "margin: 0;"
+margin: 0;$0
+endsnippet
+
+snippet mt "margin-top"
+margin-top: ${1:0};$0
+endsnippet
+
+snippet mr "margin-right"
+margin-right: ${1:0};$0
+endsnippet
+
+snippet mb "margin-bottom"
+margin-bottom: ${1:0};$0
+endsnippet
+
+snippet ml "margin-left"
+margin-left: ${1:0};$0
+endsnippet
+
+#
+# Border
+#
+
+snippet b "border"
+border: ${1:0};$0
+endsnippet
+
+snippet bw "border-width"
+border-width: ${1:0};$0
+endsnippet
+
+snippet brd "border-radius"
+border-radius: ${1:0};$0
+endsnippet
+
+snippet bt "border-top"
+border-top: ${1:0};$0
+endsnippet
+
+snippet btw "border-top-width"
+border-top-width: ${1:0};$0
+endsnippet
+
+snippet btlr "border-top-left-radius"
+border-top-left-radius: ${1:0};$0
+endsnippet
+
+snippet btlr "border-top-right-radius"
+border-top-right-radius: ${1:0};$0
+endsnippet
+
+snippet br "border-right"
+border-right: ${1:0};$0
+endsnippet
+
+snippet brw "border-right-width"
+border-right-width: ${1:0};$0
+endsnippet
+
+snippet bb "border-bottom"
+border-bottom: ${1:0};$0
+endsnippet
+
+snippet bbw "border-bottom"
+border-bottom-width: ${1:0};$0
+endsnippet
+
+snippet btlr "border-bottom-left-radius"
+border-bottom-left-radius: ${1:0};$0
+endsnippet
+
+snippet btlr "border-bottom-right-radius"
+border-bottom-right-radius: ${1:0};$0
+endsnippet
+
+snippet bl "border-left"
+border-left: ${1:0};$0
+endsnippet
+
+snippet blw "border-left"
+border-left-width: ${1:0};$0
+endsnippet
+
+#
+# Background
+#
+
+snippet bg "background"
+background: ${1:none};$0
+endsnippet
+
+snippet bgc "background-color"
+background-color: ${1:none};$0
+endsnippet
+
+snippet bgs "background-size"
+background-size: ${1:none};$0
+endsnippet
+
+snippet bgr "background-repeat"
+background-repeat: ${1:no-repeat};$0
+endsnippet
+
+snippet bgp "background-position"
+background-position: ${1:none};$0
+endsnippet
+
+#
+# Font
+#
+
+snippet fe "font"
+font: ${1:} ${3:"Helvetica Neue", Helvetica, Arial, sans-serif};$0
+endsnippet
+
+snippet ff "font-family"
+font-family: ${1:"Helvetica Neue", Helvetica, Arial, sans-serif};$0
+endsnippet
+
+snippet fs "font-size"
+font-size: ${1:1rem};$0
+endsnippet
+
+snippet fst "font-style"
+font-style: ${1:italic};$0
+endsnippet
+
+snippet fw "font-weight"
+font-weight: ${1:normal};$0
+endsnippet
+
+snippet fwn "font-weight: normal"
+font-weight: normal;$0
+endsnippet
+
+snippet fwb "font-weight: bold"
+font-weight: bold;$0
+endsnippet
+
+snippet fw1 "font-weight: 100"
+font-weight: 100;$0
+endsnippet
+
+snippet fw2 "font-weight: 200"
+font-weight: 200;$0
+endsnippet
+
+snippet fw3 "font-weight: 300"
+font-weight: 300;$0
+endsnippet
+
+snippet fw4 "font-weight: 400"
+font-weight: 400;$0
+endsnippet
+
+snippet fw5 "font-weight: 500"
+font-weight: 500;$0
+endsnippet
+
+snippet fw6 "font-weight: 600"
+font-weight: 600;$0
+endsnippet
+
+snippet fw7 "font-weight: 700"
+font-weight: 700;$0
+endsnippet
+
+snippet fw8 "font-weight: 800"
+font-weight: 800;$0
+endsnippet
+
+snippet fw9 "font-weight: 900"
+font-weight: 900;$0
+endsnippet
+
+
+#
+# Position
+#
+
+snippet po "position"
+position: ${1:relative};$0
+endsnippet
+
+snippet poa "position: absolute"
+position: absolute;$0
+endsnippet
+
+snippet pos "position: static"
+position: static;$0
+endsnippet
+
+snippet por "position: relative"
+position: relative;$0
+endsnippet
+
+snippet pof "position: fixed"
+position: fixed;$0
+endsnippet
+
+snippet post "position: sticky"
+position: sticky;$0
+endsnippet
+
+#
+# Text
+#
+
+snippet ta "text-align"
+text-align: ${1:center};$0
+endsnippet
+
+snippet tac "text-align: center"
+text-align: center;$0
+endsnippet
+
+snippet tal "text-align: left"
+text-align: left;$0
+endsnippet
+
+snippet tar "text-align: right"
+text-align: right;$0
+endsnippet
+
+snippet tt "text-transform"
+text-transform: ${1:none};$0
+endsnippet
+
+snippet ttu "text-transform: uppercase"
+text-transform: uppercase;$0
+endsnippet
+
+snippet ttc "text-transform: capitalize"
+text-transform: capitalize;$0
+endsnippet
+
+snippet td "text-decoration"
+text-decoration: ${1};$0
+endsnippet
+
+snippet tdn "text-decoration: none"
+text-decoration: none;$0
+endsnippet
+
+snippet tdu "text-decoration: underline"
+text-decoration: underline;$0
+endsnippet
+
+#
+# List
+#
+
+snippet ls "list-style:"
+list-style: ${1};$0
+endsnippet
+
+snippet lsn "list-style:"
+list-style: none outside;$0
+endsnippet
+
+
+#
+# Various
+#
+
+snippet imp "import"
+@import url('${1:reset}.css');$0
+endsnippet
+
+snippet ! "!important CSS (!)"
+!important
+endsnippet
+
+snippet cur "cursor: pointer;"
+cursor: pointer;$0
+endsnippet
+
+snippet pe "pointer-events: initial;"
+pointer-events: ${1:initial};$0
+endsnippet
+
+snippet pen "pointer-events: none;"
+pointer-events: none;$0
+endsnippet
+
+#
+# Transition
+#
+
+snippet tro "transition: opacity"
+transition: ${1:opacity 0.3s ease-in};$0
+endsnippet
+
+snippet trt "transition: transform"
+transition: ${1:transform 0.3s ease-in};$0
+endsnippet
+
+#
+# Transform
+#
+
+snippet trf "transform"
+transform: ${1};$0
+endsnippet
+
+snippet trftr "transform: translate();"
+transform: ${1:translate(-50%, -50%)};$0
+endsnippet
+
+
+#
+# Overflow
+#
+
+snippet of "overflow"
+overflow: ${1:hidden};$0
+endsnippet
+
+snippet ofh "overflow: hidden"
+overflow: hidden;$0
+endsnippet
+
+snippet ofv "overflow: visible"
+overflow: hidden;$0
+endsnippet
+
+snippet ofi "overflow: initial"
+overflow: initial;$0
+endsnippet
+
+#
+# Shadows
+#
+
+snippet tsh "text-shadow: color-hex x y blur (text)"
+text-shadow: ${1:${2:color} ${3:offset-x} ${4:offset-y} ${5:blur}};$0
+endsnippet
+
+snippet bxsh "box-shadow: color-hex x y blur (text)"
+box-shadow: ${1:${2:offset-x} ${3:offset-y} ${4:blur} ${5:spread} ${6:color}};$0
+endsnippet
+
+#
+# Colors
+#
+
+snippet c "color"
+color: ${1:#FFF};$0
+endsnippet
+
+snippet rgb "color rgb"
+rgb(${1:255}, ${2:255}, ${3:255})$0
+endsnippet
+
+snippet rgba "color rgba"
+rgba(${1:255}, ${2:255}, ${3:255}, ${4:0.5})$0
+endsnippet
+
+snippet hsl "color hsl"
+hsl(${1:360}, ${2:100}%, ${3:100}%)$0
+endsnippet
+
+snippet hsla "color hsla"
+hsla(${1:360}, ${2:100}%, ${3:100}%, ${4:0.5})$0
+endsnippet
+
+#
+# Psuedo-selectors
+#
+
+snippet :fc
+:first-child
+endsnippet
+
+snippet :fot
+:first-of-type
+endsnippet
+
+snippet :lc
+:last-child
+endsnippet
+
+snippet :lot
+:last-of-type
+endsnippet
+
+snippet :nc
+:nth-child($0)
+endsnippet
+
+snippet :nlc
+:nth-last-child($0)
+endsnippet
+
+snippet :oc
+:only-child
+endsnippet
+
+#
+# Pseudo-elements
+#
+
+snippet :a
+:after
+endsnippet
+
+snippet :b
+:before
+endsnippet
+
+snippet cnt "content: '';"
+content: '';$0
+endsnippet
+
+#
+# Common Patterns
+#
+
+snippet ptr_bs
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+endsnippet
+
+snippet ptr_reset
+* {
+	padding: 0;
+	margin: 0;
+}
+endsnippet
+
+snippet ptr_typo
+html {
+	font: normal 14px/1.5 "Fira Sans", sans-serif;
+}
+
+body {
+	font: inherit;
+}
+endsnippet
+
+# vim:ft=snippets:

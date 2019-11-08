@@ -21,26 +21,32 @@ endsnippet
 # var dump - - - - - - - - - - - - - -
 
 snippet vd "var_dump()"
-var_dump(${2:'$1'});$0
+var_dump( ${2:'$1'} );$0
 endsnippet
 
 # PHP Tags - - - - - - - - - - - - - -
 
-snippet pt "php tags"
+snippet pt "php tags" i
 <?php $1 ?>$0
 endsnippet
 
-snippet pte "php tags echo"
+snippet pte "php tags echo" i
 <?php echo $1; ?>$0
 endsnippet
 
-snippet pif "php tags if"
+snippet pif "php tags if" i
 <?php if ( $1 ) { ?>
 	$2
 <?php } ?>$0
 endsnippet
 
-snippet pife "php tags if else"
+snippet pifem "php tags if" i
+<?php if ( ! empty( $1 ) ) { ?>
+	$2
+<?php } ?>$0
+endsnippet
+
+snippet pife "php tags if else" i
 <?php if ( $1 ) { ?>
 	$2
 <?php } else { ?>
@@ -65,7 +71,7 @@ if ( $1 ) {
 endsnippet
 
 snippet fu "Function snip" b
-function ${1:name}(${2:$param})
+function ${1:name}( ${2:$param} )
 {
 	${VISUAL}${3:return null;}
 }
