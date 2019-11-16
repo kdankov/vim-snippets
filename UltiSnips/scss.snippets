@@ -1,4 +1,4 @@
-#extends css
+extends css
 
 snippet $ ""
 $${1:variable}: ${0:value};
@@ -21,6 +21,24 @@ endsnippet
 snippet bp
 @include bp(${1}) {
 	${2}
+}$0
+endsnippet
+
+snippet bpd
+@include bp(desktop) {
+	${1}
+}$0
+endsnippet
+
+snippet bpm
+@include bp(mobile) {
+	${1}
+}$0
+endsnippet
+
+snippet bpp
+@include bp(phone) {
+	${1}
 }$0
 endsnippet
 
