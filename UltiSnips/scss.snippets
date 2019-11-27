@@ -24,6 +24,24 @@ snippet bp
 }$0
 endsnippet
 
+snippet bpd
+@include bp(desktop) {
+	${1}
+}$0
+endsnippet
+
+snippet bpm
+@include bp(mobile) {
+	${1}
+}$0
+endsnippet
+
+snippet bpp
+@include bp(phone) {
+	${1}
+}$0
+endsnippet
+
 snippet ext
 @extend ${0};
 endsnippet
